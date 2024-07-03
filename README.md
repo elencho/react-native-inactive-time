@@ -29,7 +29,6 @@ Make sure **useInactivityListener()** is accessible from whole add, add it in Ap
 
 ```js
 import useInactivityListener from 'react-native-inactive-time';
-import useInactivityListener from 'react-native-inactive-time';
 import CustomText from './CustomText';
 
 export default function App() {
@@ -80,7 +79,7 @@ Prop | Description | Return Type
 
 ## Plans
 
-Library is beta version right now, I want to add tests and get some user feedback to make is more user friendly, so all you comments matter for me.
+Library is beta version right now, I want to add tests and get some user feedback to make is more user friendly, so all your comments matter for me.
 
 
 ## Contact
