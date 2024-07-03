@@ -1,3 +1,5 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+import useInactivityListener from './useInactivityListener';
+
+export default useInactivityListener;
+export { getElapsedTime } from './useInactivityListener';
+export type { ITime } from './types.ts';
