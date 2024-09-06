@@ -1,6 +1,6 @@
 # react-native-inactive-time
 
-👾Library is for you - if you want to detect when user closed app last time and how long it took to open it again.👾
+👾 **This library is for you** - if you want to detect when the user closed the app last time and how long it took to open it again.👾
 
 https://github.com/elencho/react-native-inactive-time/assets/53994979/8823d56c-9a6b-4e75-aa46-75a2c0b9003e
 
@@ -9,8 +9,7 @@ https://github.com/elencho/react-native-inactive-time/assets/53994979/8823d56c-9
 
 ```sh
 npm install react-native-inactive-time
-```
-```sh
+# or...
 yarn add react-native-inactive-time
 ```
 
@@ -18,14 +17,13 @@ This library uses [AsyncStorage](https://github.com/react-native-async-storage/a
 
 ```sh
 yarn add @react-native-async-storage/async-storage
-```
-```sh
+# or...
 npm install @react-native-async-storage/async-storage
 ```
 
 ## Usage
 
-Make sure **useInactivityListener()** is accessible from whole add, add it in App.js or maybe RootNavigator.
+Make sure **useInactivityListener()** is accessible from the whole app, add it in App.js or maybe RootNavigator.
 
 ```js
 import useInactivityListener from 'react-native-inactive-time';
@@ -43,7 +41,7 @@ export default function App() {
   );
 }
 ```
-**useInactivityListener** is onetime listener, so that means after killing the app elapsedTime, formattedTime extracted from useInactivityListener() may be null.for that we have another method: **getElapsedTime()**
+**useInactivityListener** is a onetime listener, so that means after when you kill the app, `elapsedTime` and `formattedTime` extracted from `useInactivityListener()` may be `null`. For that, we have another method: **getElapsedTime()**
 
 ```js
 import { getElapsedTime, type ITime } from 'react-native-inactive-time';
@@ -71,7 +69,7 @@ const CustomText = () => {
 
 Prop | Description | Return Type
 ------ | ------ | ------ 
-**`useInactivityListener()`** | **REQUIRED** Method which should be defined at top component, can also extend elapsed time and formatted time| void | number | null | string
+**`useInactivityListener()`** | **REQUIRED** Method which should be defined at the top component, can also extend elapsed time and formatted time | void | number | null | string
 **`getElapsedTime()`** | method to use inside hooks | number | null
 **`elapsedTime`** | time difference from last close to last open in milliseconds | number 
 **`formattedTime`** | formatted time difference from last close to last open | string 
@@ -79,8 +77,7 @@ Prop | Description | Return Type
 
 ## Plans
 
-Library is beta version right now, I want to add tests and get some user feedback to make is more user friendly, so all your comments matter for me.
-
+Library is beta version right now. I want to add tests and get some user feedback to make it more user friendly, so I appreciate all your comments and feedback.
 
 ## Contact
 
